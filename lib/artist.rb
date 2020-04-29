@@ -19,4 +19,8 @@ class Artist
   def songs 
     Song.all.select {|song| song.artist == self}
   end
+  
+  def print_songs
+    Song.all.map {|song| song.name}
+  end
 end
