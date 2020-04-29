@@ -16,7 +16,7 @@ class Artist
     
     @@all.each do |artist| 
       if artist.name == name
-        return artist
+        return self
       else
         Artist.new(name)
       end
