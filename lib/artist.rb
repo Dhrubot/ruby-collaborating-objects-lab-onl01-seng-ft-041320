@@ -22,6 +22,6 @@ class Artist
   
   def print_songs
     all_songs = self.songs
-    all_songs.map {|song| song.name}
+    puts all_songs.map {|song| song.name}
   end
 end
