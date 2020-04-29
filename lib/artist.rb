@@ -13,10 +13,12 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    if self.name == name
-      self
-    else
-      Artist.new(name)
+    @@all.map do |artist|
+      if artist.name == name
+        artist
+      else
+        Artist.new(name)
+      end
     end
   end
   
