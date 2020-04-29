@@ -14,7 +14,13 @@ class Artist
   
   def self.find_or_create_by_name(name)
     
-    @@all.map {|artist| artist.name == name}
+    @@all.map do |artist| 
+      if artist.name == name
+        return artist
+      else
+        artist = Artist.new(name)
+      end
+      artist
   end
   
   def add_song(song)
