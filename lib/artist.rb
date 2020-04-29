@@ -12,7 +12,7 @@ class Artist
     @@all
   end
   
-  def find_name(name)
+  def self.find_name(name)
     
   end
   
