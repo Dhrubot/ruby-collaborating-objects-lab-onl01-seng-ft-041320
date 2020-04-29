@@ -14,7 +14,7 @@ class Artist
   
   def self.find_or_create_by_name(name)
     
-    @@all.map do |artist| 
+    @@all.each do |artist| 
       if artist.name == name
         return artist
       else
