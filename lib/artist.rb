@@ -16,7 +16,7 @@ class Artist
     result = @@all.find {|artist| artist.name == name}
     
     if result == nil 
-      self.new(name)
+      Artist.new(name)
     else
       result
     end
