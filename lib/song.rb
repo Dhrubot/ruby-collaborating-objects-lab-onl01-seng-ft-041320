@@ -12,4 +12,12 @@ class Song
   def self.all
     @@all
   end
+  
+  def artist_name=(name)
+    if self.artist
+      self.artist = Artist.new(name)
+    else
+      
+    end
+  end
 end
