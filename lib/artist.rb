@@ -18,9 +18,8 @@ class Artist
       if artist.name == name
         return artist
       else
-        artist = Artist.new(name)
+        Artist.new(name)
       end
-      artist
     end
   end
   
