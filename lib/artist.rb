@@ -16,7 +16,10 @@ class Artist
     result = @@all.find {|artist| artist.name == name}
     
     if result == nil 
-      self.artist
+      self.new(name)
+    else
+      result
+    end
   end
   
   def add_song(song)
