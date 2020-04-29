@@ -10,4 +10,8 @@ class MP3Importer
       file.gsub("#{path}/", "")
     end
   end
+  
+  def import 
+    files.each {|file| Song.new(file)}
+  end
 end
